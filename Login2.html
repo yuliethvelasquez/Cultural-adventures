@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Nuevo Usuario</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            background: linear-gradient(to bottom, #176B87, #3D8FA0, #828282);
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            width: 80%;
+            max-width: 600px;
+            height: 80vh;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 5%;
+            margin-left: 10%;
+            position: relative;
+        }
+
+        .options {
+        margin-bottom: 20px;
+        margin-left: auto; 
+        text-align: right; 
+        margin-top: 40px;
+    }
+
+    .options a {
+        margin-left: 20px;
+        text-decoration: none;
+        color: #FFFFFF;
+        font-weight: bold;
+    }
+
+    .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrado vertical */
+    align-items: center; /* Centrado horizontal */
+    padding: 20px;
+    flex: 1;
+}
+
+        .form-group {
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .form-group input,
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 10px; /* Espaciado inferior entre los elementos */
+        }
+
+        .form-group button {
+            background-color: #2ECFF2;
+            color: white;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            width: 107%;
+        }
+
+        .form-group button:hover {
+            background-color: #176B87;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            margin-top: 20px;
+            color: white;
+        }
+
+        .right-container {
+    width: 30%; /* Ajusta el ancho según tus necesidades */
+    padding: 20px;
+    color: white; /* Color del texto */
+    position: absolute;
+    top: 50%; /* Posiciona el contenedor en el centro vertical */
+    right: 10%; /* Ajusta la posición hacia la izquierda */
+    transform: translateY(-50%); /* Ajusta verticalmente según la mitad de la altura del contenedor */
+}
+
+.right-container h2 {
+    font-size: 2em; /* Tamaño grande para el título */
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+.right-container p {
+    font-size: 1.2em; /* Tamaño grande para el texto */
+}
+@media screen and (max-width: 768px) {
+
+    body{
+        margin-bottom: 50px;
+    }
+        .container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .right-container {
+            order: 1;
+            flex: 1;
+            width: 100%; /* Ajustar el ancho de los elementos al 100% */
+            background-color: #2ECFF2; 
+        }
+
+        .options {
+            text-align: center; /* Centrar las opciones en dispositivos pequeños */
+            margin-top: 20px; /* Agregar margen superior en dispositivos pequeños */
+
+        }
+
+        .form-group input,
+        .form-group button {
+            width: 90%; /* Ajustar el ancho de los inputs y botones en dispositivos pequeños */
+        }
+    }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="form-container">
+        <div class="options">
+            <a href="Login.html">Login</a>
+            <a href="#">Crear cuenta</a>
+        </div>
+        <h2>Registro de Nuevo Usuario</h2>
+        <div class="form-group">
+            <input type="text" id="username" name="username" placeholder="Nombre de Usuario">
+        </div>
+        <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Correo Electrónico">
+        </div>
+        <div class="form-group">
+            <input type="password" id="password" name="password" placeholder="Contraseña">
+        </div>
+        <div class="form-group">
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirmar Contraseña">
+        </div>
+        <div class="form-group">
+            <button type="submit">Registrarse</button>
+        </div>
+        <div class="form-group">
+            <p>¿Ya tienes una cuenta? <a href="#">Iniciar Sesión</a></p>
+        </div>
+    </div>
+</div>
+<div class="right-container">
+    <h2>Tu próximo viaje comienza aquí</h2>
+    <p>Suscríbete para recibir inspiración y ofertas exclusivas.</p>
+</div>
+</body>
+</html>
